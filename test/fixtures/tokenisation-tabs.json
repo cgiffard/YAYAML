@@ -1,0 +1,25 @@
+[
+    {
+        "line": "this",
+        "score": 0,
+        "children": [
+            { "line": "is a", "score": 1 },
+            {
+                "line": "test of tabs",
+                "score": 1,
+                "children": [
+                    { "line": "tokenisation", "score": 2 },
+                    { "line": "and", "score": 2 }
+                ]
+            },
+            {
+                "line": "hierarchical",
+                "score": 1,
+                "children": [
+                    { "line": "nesting", "score": 2 }
+                ]
+            }
+        ]
+    },
+    { "line": "test", "score": 0 }
+]

@@ -1,0 +1,61 @@
+{
+    "node": {
+        "api-service-http-frontend": {
+            "title":   "API Server HTTP Frontend 02",
+            "type":    "web",
+            "owner":   "John Smith <john.smith@example.com>",
+            "region": [
+                "ap-southeast2",
+                "api",
+                "HTTP Frontend"
+            ],
+            "tag": [
+                "UAT",
+                "API",
+                "HTTP",
+                "web",
+                "smithj"
+            ],
+            "depends": [
+                "api-service-cache",
+                "api-service-elasticsearch",
+                "ops-dmz-proxy"
+            ],
+            "metric": {
+                "messages_received": {
+                    "weight":  1,
+                    "top": {
+                        "acceptable": 500,
+                        "critical":   1000
+                    },
+                    "bottom": {
+                        "acceptable": 25,
+                        "critical":   5
+                    }
+                },
+                "messages_errored": {
+                    "weight": 2,
+                    "top": {
+                        "acceptable":  5,
+                        "critical":    10
+                    },
+                    "bottom": {
+                        "acceptable":  -1,
+                        "critical":    -1
+                    }
+                }
+            }
+        }
+    },
+    "service": {
+        "article-publishing": {
+            "title":    "Article Publishing",
+            "owner":    "John Smith <john.smith@example.com>",
+            "depends": [
+                "api-service-http-frontend",
+                "http-transform-layer",
+                "newrelic-article-rum"
+            ]
+        }
+    }
+}

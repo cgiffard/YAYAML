@@ -2,7 +2,7 @@
   "name": "yayaml",
   "version": "1.0.0",
   "description": "Yet another Yet another markup language",
-  "main": "index.js",
+  "main": "lib/yayaml.js",
   "directories": {
     "test": "test"
   },

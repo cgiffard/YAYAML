@@ -1,0 +1,10 @@
+{
+    "game": {
+        "bingo": {
+            "has": "silly rules"
+        },
+        "chess": {
+            "has": "a chessboard"
+        }
+    }
+}

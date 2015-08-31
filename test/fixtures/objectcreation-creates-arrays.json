@@ -1,0 +1,10 @@
+{
+    "repeat": [
+        "value1", 2, 3
+    ],
+    "samuel": {
+        "likes": [
+            "music", "food", "turning into a camping stove and singing sea shanties"
+        ]
+    }
+}

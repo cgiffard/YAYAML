@@ -1,0 +1,40 @@
+node api-service-http-frontend
+    title   API Server HTTP Frontend 02
+    region  ap-southeast2
+    region  api
+    region  HTTP Frontend
+    type    web
+    owner   John Smith <john.smith@example.com>
+    tag     UAT
+    tag     API
+    tag     HTTP
+    tag     web
+    tag     smithj
+    depends api-service-cache
+    depends api-service-elasticsearch
+    depends ops-dmz-proxy
+
+    metric messages_received
+        weight  1
+        top
+            acceptable  500
+            critical    1000
+        bottom
+            acceptable  25
+            critical    5
+
+    metric messages_errored
+        weight  2
+        top
+            acceptable  5
+            critical    10
+        bottom
+            acceptable  -1
+            critical    -1
+
+service article-publishing
+    title   Article Publishing
+    owner   John Smith <john.smith@example.com>
+    depends api-service-http-frontend
+    depends http-transform-layer
+    depends newrelic-article-rum

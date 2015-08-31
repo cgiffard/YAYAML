@@ -1,0 +1,5 @@
+[
+    { "line": "this is a test", "score": 0 },
+    { "line": "that was a blank line", "score": 0 },
+    { "line": "it shouldn't be present", "score": 0 }
+]

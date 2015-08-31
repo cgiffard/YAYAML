@@ -1,0 +1,11 @@
+object
+	property foo
+	otherproperty bar
+
+	submap
+		foo bar
+		baz blargh
+
+another_object
+	property foo
+	anotherproperty bar
