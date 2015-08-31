@@ -13,7 +13,7 @@ Yet Another Yet Another Markup Language
 ## What the hell?
 
 YAYAML is a very light spin on YAML, designed to create a visually unopinionated
-configuration language.
+configuration language. Bonus points: the file extension gets to be `.yay`.
 
 ### Example
 
