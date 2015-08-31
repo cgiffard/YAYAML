@@ -6,6 +6,13 @@ Yet Another Yet Another Markup Language
 
 `npm install yayaml`
 
+## Usage
+
+```js
+var parseYayaml = require("yayaml");
+var myObject = parseYayaml(fs.readFileSync("myfile.yay", "utf8"));
+```
+
 ## Testing
 
 `npm test`
